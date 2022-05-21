@@ -1,0 +1,47 @@
+@import '../../index.scss';
+
+.video__card {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+	background: $component-background1;
+  backdrop-filter: blur(2rem);
+	aspect-ratio: 16/9;
+  border: $border1;
+	border-radius: 5rem;
+	box-shadow: 0.5rem 1.5rem 4rem rgba($color-dark, 0.03);
+	margin: 5rem 0;
+	overflow: hidden;
+	width: 80%;
+}
+
+.video__title {
+  font-size: 4.8rem;
+  margin: 5rem;
+}
+
+.video__ {
+  width: 100%;
+}
+
+.video__image { 
+  height: 100%;
+}
+
+@media (max-width: 950px){
+  .video__title {
+    font-size: 4rem;
+    margin: 3rem;
+  }
+}
+
+@media (max-width: 600px){
+  .video__card {
+    width: 95%;
+  }
+
+  .video__title {
+    font-size: 2.8rem;
+    margin: 2rem;
+  }
+}

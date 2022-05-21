@@ -1,0 +1,99 @@
+@import '../../index.scss';
+
+.newsLetter {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color-dark, 0.2);
+  width: 100vw;
+  min-height: 100%;
+  z-index: 10;
+}
+
+.newsLetter__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(174.86deg, #FFE0E8 37.68%, #EFE6FC 57.35%, #E7E9FD 77.78%, #DEF6FD 100%);
+  border: $border1;
+  border-radius: 3rem;
+  box-shadow: 0.5rem 1.5rem 4rem rgba($color-dark, 0.03);
+  position: relative;
+  padding: 0 5rem;
+  width: 50rem;
+  height: 32rem;
+}
+
+.newsLetter__close {
+  background-color: $color-light;
+  border-radius: 50%;
+  box-shadow: 0.5rem 1.5rem 4rem rgba($color-dark, 0.3);
+  cursor: pointer;
+  font-size: 3rem;
+  margin-left: 105%;
+}
+
+.newsLetter__title {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.newsLetter__paragraph {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 3rem 0;
+}
+
+.newsLetter__email {
+  margin-top: 2rem;
+  width: 80%;
+}
+
+.newsLetter__input {
+  background-color: rgba($color-light, 0.2);
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 1.5rem 4rem rgba($color-dark, 0.03);
+  backdrop-filter: blur(2rem);
+  font-size: 2rem;
+  padding: 1rem;
+  width: 100%;
+
+  &:focus {
+    outline: solid 0.18rem #5564f2;
+  }
+}
+
+.newsLetter__button {
+  position: absolute;
+  border: none;
+}
+
+.newsLetter__arrow {
+  background-color: $color-light;
+  border-radius: 50%;
+  box-shadow: 0.5rem 1.5rem 4rem rgba($color-dark, 0.3);
+  font-size: 3rem;
+  margin-top: 0.7rem;
+  margin-left: -5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 500px){
+  .newsLetter__card {
+    height: 80%;
+    width: 95%;
+  }
+
+  .newsLetter__close {
+    margin-top: 1rem;
+  }
+
+  .newsLetter__input {
+    margin-bottom: 1rem;
+  }
+}

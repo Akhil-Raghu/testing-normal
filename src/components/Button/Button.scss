@@ -1,0 +1,114 @@
+@import '../../index.scss';
+
+.btn__primary {
+	position: relative;
+	display: flex;
+	align-items: center;
+	border: none;
+	border-radius: 3rem;
+	box-shadow: $box-shadow1;
+	color: #5564f2;
+	padding: 3rem 5rem;
+	font-size: 2.5rem;
+	font-weight: 500;
+	height: 5rem;
+	margin: 5rem;
+	background: -webkit-linear-gradient(92.01deg, #8c4fe8 0%, #5564f2 64.02%, #18c2ef 99.12%);
+	background-clip: text;
+    -webkit-background-clip: text;
+	cursor: pointer;
+
+	&:hover {
+		background-clip: unset;
+		-webkit-background-clip: unset;
+		-webkit-text-fill-color: unset;
+		color: $color-light; 
+	}
+}
+
+.btn__primary--dark {
+	box-shadow: $box-shadow2;
+
+}
+
+.btn__primary::before {
+	content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 3rem;
+  border: 0.3rem solid transparent;
+  background: linear-gradient(to right, #8c4fe8, #5564f2, #18c2ef ) border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+}
+
+.btn__secondary {
+	position: relative;
+	display: flex;
+	align-items: center;
+	border: none;
+	border-radius: 3rem;
+	box-shadow: $box-shadow1;
+	color: #F59126;
+	font-size: 2.5rem;
+	font-weight: 500;
+	padding: 3rem 5rem;
+	height: 5rem;
+	margin: 5rem;
+	background: linear-gradient(92.01deg, #FE245D 0%, #F59126 64.02%, #FDC529 99.12%);
+	background-clip: text;
+  -webkit-background-clip: text;
+	cursor: pointer;
+
+	&:hover {
+		background-clip: unset;
+		-webkit-background-clip: unset;
+		-webkit-text-fill-color: unset;
+		color: $color-light; 
+	}
+}
+
+.btn__secondary--dark {
+	box-shadow: $box-shadow2;
+}
+
+.btn__secondary::before {
+	content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 2.5rem;
+  border: 0.3rem solid transparent;
+  background: linear-gradient(to right, #FE245D, #F59126, #FDC529 ) border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+}
+
+@media (max-width: 450px){
+	.btn__primary {
+		font-size: 2.3rem;
+	}
+
+	.btn__secondary {
+		font-size: 2.3rem;
+	}
+}
+
+@media (max-width: 423px){
+	.btn__primary {
+		font-size: 1.6rem;
+	}
+
+	.btn__secondary {
+		font-size: 1.6rem;
+	}
+}

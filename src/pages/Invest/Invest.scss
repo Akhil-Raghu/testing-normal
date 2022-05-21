@@ -1,0 +1,65 @@
+@import '../../index.scss';
+
+.invest {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: $background1;
+	box-shadow: 0.5rem 1.5rem 4rem rgba($color-dark, 0.3);
+	padding-top: 12rem;
+	padding-bottom: 5rem;
+	width: 100vw;
+  min-height: 100vh;
+}
+
+.invest__dark {
+	background: $background4;
+	color: $color-light;
+}
+
+.map__container {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(32, 1fr);
+	grid-template-rows: repeat(18, 1fr);
+	background-color: rgba($color-light, 0.2);
+	backdrop-filter: blur(5rem);
+	box-shadow: 0.5rem 1.5rem 4rem rgba($color-dark, 0.03);
+	border: $border1;
+	aspect-ratio: 16/9;
+	border-radius: 5rem;
+	margin: 5rem 0;
+	overflow: hidden;
+	width: 80%;
+	height: 80%;
+}
+
+.map__streets {
+	grid-column-start: 1;
+	grid-column-end: 33;
+	grid-row-start: 1;
+	grid-row-end: 19;
+  width: 100%;
+  height: 100%;
+}
+
+.card__show {
+	transition: all 1s;
+	transform: translateX(0);
+}
+
+.card__hide {
+	transition: all 0.8s;
+	transform: translate(-150rem, -30rem);
+}
+
+.invest__roadmap {
+	border-radius: 5rem;
+	width: 70%;
+}
+
+@media (max-width: 750px){
+	.map__container {
+		border-radius: 3rem;
+	}
+}

@@ -1,0 +1,29 @@
+@import '../../index.scss';
+
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: $background2;
+	padding-top: 12rem;
+	padding-bottom: 5rem;
+	width: 100vw;
+}
+
+.about__dark {
+	background: $background4;
+	color: $color-light;
+}
+
+.about__founder{
+	height: 65vh;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 9rem;
+}
+
+.about__team--cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
